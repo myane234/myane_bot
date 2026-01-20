@@ -6,6 +6,10 @@ const qrcode = require('qrcode-terminal');
 const path = require('path');
 const { exec } = require('child_process');
 
+//import Plugins
+const { getRandomPerkalian, cekjawaban } = require('./plugins/Perkalian.js');
+const { AsakOtakList } = require("./plugins/List/AsakOtakList.js");
+
 const MAX_MONEY = 1000000000; // Batas maksimum uang ($1 miliar)
 const assetDataFile = 'assets.json';
 
@@ -147,9 +151,12 @@ Perkenalkan, saya adalah Dafitra_Bot. Silakan lihat daftar menu di bawah ini unt
 ִֶָ☾ *Status*:
    - !status → Melihat status akun Anda (level, uang, aset, dll.).
 
-ִֶָ☾ *Matematika*:
-   - !mtk → Bermain tebak-tebakan matematika.
-   - !a [jawaban] → Menjawab tebak-tebakan matematika.
+ִֶָ☾ *Asak Otak*:
+   !asahotak → Melihat daftar permainan asah otak.
+
+ִֶָ☾ *Tools*:
+    - !dwd [URL] → Mengunduh video dari URL yang diberikan.
+
 
 ִֶָ☾ *Admin*:
    - !topup [jumlah] [@tag atau nomor] → Menambahkan uang ke akun pengguna (admin saja).
@@ -165,6 +172,12 @@ Perkenalkan, saya adalah Dafitra_Bot. Silakan lihat daftar menu di bawah ini unt
                 } catch (error) {
                     console.error("❌ Gagal mengirim menu:", error);
                 }
+            }
+
+
+            if(body.toLowerCase().startsWith("!asahotak")) {
+                AsakOtakList();
+                await sock.sendMessage(from, { text: AsakOtakList });
             }
 
             // Perintah !tagall (hanya di grup)
@@ -261,6 +274,14 @@ Perkenalkan, saya adalah Dafitra_Bot. Silakan lihat daftar menu di bawah ini unt
                 } catch (error) {
                     console.error("❌ Gagal memproses jawaban:", error);
                 }
+            }
+
+            if(body.startsWith("!perkalian")) {
+                await getRandomPerkalian(sock, from);
+            }
+
+            if(body.startsWith("!j ")) {
+                await cekjawaban(body, sock, from);
             }
 
           
@@ -1242,24 +1263,26 @@ sock.ev.on('messages.upsert', async ({ messages }) => {
         // Handler game Werewolf
         const command = body.toLowerCase().split(' ')[0];
         
-        if (command === "!werewolf") {
-            await startRoom(sock, chatId);
-        } 
-        else if (command === "!join") {
-            await joinGame(sock, chatId, senderId, msg.pushName);
-        }
-        else if (command === "!startwolf") {
-            await startGame(sock, chatId);
-        }
-        else if (command === "!kill" && mentions.length > 0) {
-            await killPlayer(sock, chatId, senderId, mentions[0]);
-        }
-        else if (command === "!vote" && mentions.length > 0) {
-            await votePlayer(sock, chatId, senderId, mentions[0]);
-        }
-        else if (command === "!check" && mentions.length > 0) {
-            await checkPlayerRole(sock, chatId, senderId, mentions[0]);
-        }
+        //Bahaya jirr wereWolf
+
+        // if (command === "!werewolf") {
+        //     await startRoom(sock, chatId);
+        // } 
+        // else if (command === "!join") {
+        //     await joinGame(sock, chatId, senderId, msg.pushName);
+        // }
+        // else if (command === "!startwolf") {
+        //     await startGame(sock, chatId);
+        // }
+        // else if (command === "!kill" && mentions.length > 0) {
+        //     await killPlayer(sock, chatId, senderId, mentions[0]);
+        // }
+        // else if (command === "!vote" && mentions.length > 0) {
+        //     await votePlayer(sock, chatId, senderId, mentions[0]);
+        // }
+        // else if (command === "!check" && mentions.length > 0) {
+        //     await checkPlayerRole(sock, chatId, senderId, mentions[0]);
+        // }
 
     } catch (error) {
         console.error("Error handling message:", error);
