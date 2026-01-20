@@ -1,2 +1,6 @@
 node_modules
-session
+session/
+assets.json
+app.log
+cookies.txt
+userData.json
