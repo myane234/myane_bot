@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "beta version of bot tag",
   "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc.9",
     "axios": "^1.8.4",
     "ffmpeg": "^0.0.4",
     "qrcode-terminal": "^0.12.0",
