@@ -36,7 +36,7 @@
   "6285773649235@s.whatsapp.net": {
     "level": 1,
     "exp": 30,
-    "money": 26967967.840000097,
+    "money": 27067967.840000097,
     "job": "Tukang Sampah",
     "lastWork": null,
     "missedDays": 0,
@@ -147,5 +147,27 @@
     "absenDate": "Mon Mar 31 2025",
     "absenCount": 3,
     "dailyEarnings": 45
+  },
+  "99402890911823@lid": {
+    "level": 1,
+    "exp": 30,
+    "money": 33.2,
+    "job": "Kurir",
+    "lastWork": null,
+    "missedDays": 0,
+    "absenDate": "Tue Jan 20 2026",
+    "absenCount": 3,
+    "dailyEarnings": 45,
+    "assets": {
+      "Dogecoin": 20
+    }
+  },
+  "28377100636315@lid": {
+    "level": 1,
+    "exp": 0,
+    "money": 0,
+    "job": null,
+    "lastWork": null,
+    "missedDays": 0
   }
 }
