@@ -1,27 +1,27 @@
 [
   {
     "name": "Dogecoin",
-    "price": 0.61,
-    "previousPrice": 0.63
+    "price": 0.1,
+    "previousPrice": 0.1
   },
   {
     "name": "Bitcoin",
-    "price": 7.92,
-    "previousPrice": 7.85
+    "price": 4.35,
+    "previousPrice": 4.24
   },
   {
     "name": "Emas",
-    "price": 14.27,
-    "previousPrice": 15.02
+    "price": 3.97,
+    "previousPrice": 3.94
   },
   {
     "name": "Ethereum",
-    "price": 50.84,
-    "previousPrice": 52.06
+    "price": 15.52,
+    "previousPrice": 16.33
   },
   {
     "name": "Litecoin",
-    "price": 25.3,
-    "previousPrice": 25.14
+    "price": 1.7,
+    "previousPrice": 1.76
   }
 ]

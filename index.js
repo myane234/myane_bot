@@ -121,7 +121,7 @@ Perkenalkan, saya adalah Dafitra_Bot. Silakan lihat daftar menu di bawah ini unt
 
 「  I N F O  B O T  」
 ִֶָ☾. Name : Dafitra_Bot
-ִֶָ☾. Owner : +62821-8380-7360
+ִֶָ☾. Owner : +6285721829539
 ִֶָ☾. Total Fitur : 4 Fitur
 ִֶָ☾. Total Command : 7 Command
 ִֶָ☾. Prefix : ( Prefix_Bot )

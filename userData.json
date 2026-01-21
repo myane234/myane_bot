@@ -150,14 +150,14 @@
   },
   "99402890911823@lid": {
     "level": 1,
-    "exp": 30,
-    "money": 33.2,
+    "exp": 40,
+    "money": 48.2,
     "job": "Kurir",
     "lastWork": null,
     "missedDays": 0,
-    "absenDate": "Tue Jan 20 2026",
-    "absenCount": 3,
-    "dailyEarnings": 45,
+    "absenDate": "Wed Jan 21 2026",
+    "absenCount": 1,
+    "dailyEarnings": 15,
     "assets": {
       "Dogecoin": 20
     }
